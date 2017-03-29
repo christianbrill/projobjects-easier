@@ -11,6 +11,12 @@ class City extends DbObject {
 	 */
 	public static function get($id) {
 		// TODO: Implement get() method.
+		$request = '
+			SELECT cit_id
+			FROM city
+		';
+
+		$idRequest = Config::getInstance()->getPDO()->query($request);
 	}
 
 	/**
@@ -18,6 +24,11 @@ class City extends DbObject {
 	 */
 	public static function getAll() {
 		// TODO: Implement getAll() method.
+	}
+
+
+	public static function getCountry() {
+		// TODO
 	}
 
 	/**

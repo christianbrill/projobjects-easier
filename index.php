@@ -3,7 +3,7 @@
 // Autoload PSR-4
 spl_autoload_register();
 
-// Imports 
+// Imports
 use \Classes\Webforce3\Config\Config;
 
 // Get the config object
